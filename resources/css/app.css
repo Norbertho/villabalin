@@ -1,0 +1,38 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import '@splidejs/splide/dist/css/splide.min.css';
+.header{
+    background-image: url("/images/mainbg.jpg");
+    min-height: 60vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header2{
+    background-image: url("/images/furdo-l-3.jpg");
+    min-height: 60vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header3{
+    background-image: url("/images/mainbg2.jpg");
+    min-height: 60vh;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dark{
+
+}
+.alulvonas{
+    height:2px;
+}
+.splide__slide img {
+	width : 100%;
+	height: auto;
+}
