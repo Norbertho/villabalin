@@ -4,7 +4,7 @@
         <meta name="description" content="Békésszentandrási VillaBalin kiadó apartman horgászat, jacuzzi, fűthető meence.">
         <meta name="keywords" content="abékésszentandrás, kiadó,apartman, horgászat, stég, jacuzzi, fűthető medence">
         <meta name="author" content="Váradi Adrienn">
-        <link rel="canonical" href="https://villabalin.hu" />
+        <link rel="canonical" href="https://villabalin.hu" />  
         <!-- og meta tags -->  
         <meta property="og:title" content="Békésszentandrási VillaBalin szállás bemutatása, partmenti apartman kiadó horgászatra kiváló" /> 
         <meta property="og:type" content="website" />
