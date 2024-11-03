@@ -34,7 +34,7 @@
             TÁBOR
         </div>
         <div class="container mx-auto px-8">
-            <h2 class="text-lg md:text-2xl font-bold text-gray-600 mb-4 mt-8">Akik segítenek:</h2>
+            <h2 class="text-center text-lg md:text-2xl font-bold text-gray-600 mb-4 mt-8">Akik segítenek</h2>
             <p class="text-center text-sm md:text-lg">Csodálatos környezet és lelkiismeretes szakemberek</p>
             <div class="flex">
                 <div class="container mx-auto mb-24 mt-10">
@@ -88,19 +88,19 @@
                     <img  src="{{ asset('images/joga_villa_balin_kep9.jpg') }}" alt="" class="h-full object-cover">
                 </div>
                 
-                <div class="text-black w-full h-full flex flex-col gap-4">
-                    <div class="bg-teal-50 rounded text-lg p-6 flex gap-4">
-                        <span class="rounded font-bold">Helyszín:</span>
-                        <div class="flex flex-col">
+                <div class="text-black w-full h-full flex flex-col gap-4 text-gray-600">
+                    <div class="bg-teal-50 text-lg p-6 flex flex-wrap gap-4">
+                        <span class="w-full text-2xl text-gray-600 font-bold">Helyszín:</span>
+                        <div class="w-full text-gray-600  flex flex-col">
                             <p class="font-bold">Villa Balin - Békésszentandrás</p>
                             <p class="">10 férőhelyes ház, közvetlenül a vízparton található saját stéggel, jacuzzival és egy kültéri szaunaházzal.</p>
                         </div>
                     </div>
-                    <div class="bg-teal-50 rounded text-lg p-6 flex gap-4">
-                        <span class="rounded font-bold" >A tábor ára:</span>
-                        <div class="flex flex-col">
-                            <p class="font-bold">130.000 Ft/fő október 31-ig történő foglalás esetén</p>
-                            <p class="mb-2">139.000 Ft/fő (november 1-től)</p>
+                    <div class="bg-teal-50  text-lg p-6 flex flex-wrap gap-4">
+                        <span class="w-full text-2xl text-gray-600 font-bold" >A tábor ára:</span>
+                        <div class="w-ful flex flex-col">
+                            <p class="font-bold text-gray-600">130.000 Ft/fő október 31-ig történő foglalás esetén</p>
+                            <p class="mb-2 text-gray-600">139.000 Ft/fő (november 1-től)</p>
                             <div>
                                 <p class="flex items-center">Az ár tartalmazza az alábbiakat:</p>
                                 <ul class="ml-4 list-disc">
@@ -112,13 +112,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-teal-50 rounded text-lg p-6 flex gap-4">
-                        <span class="rounded font-bold" >Időpont:</span>
-                        <div class="flex flex-col">
+                    <div class="bg-teal-50  text-lg p-6 flex flex-wrap gap-4">
+                        <span class="w-full text-2xl text-gray-600 font-bold" >Időpont:</span>
+                        <div class="w-full text-gray-600 flex flex-col">
                             <p class="font-bold">2024. november 14-17. (3 éjszaka)</p>
                         </div>
                     </div>
-                    <div class="bg-teal-50 rounded text-lg p-6 flex flex-col gap-2 text-center">
+                    <div class="bg-teal-50  text-lg p-6 flex flex-col gap-2 text-center">
                         <p>
                             Jelentkezés és bővebb információ:
                         </p>
@@ -128,10 +128,10 @@
                 </div>
             </div>
 
-            <div class="w-full flex justify-center mt-8">
+            <div class="w-full text-gray-600 flex justify-center mt-12">
                 <a  href="{{asset('/images/oszi_feltoltodes.pdf')}}">
                 <div class="inline-flex items-center">
-                    <p class="bg-teal-300 px-4 py-2 rounded-full uppercase text-sm font-bold leading-5 text-gray-700 hover:text-white hover:bg-bluish">
+                    <p class="bg-teal-300 px-6 py-4 rounded-full uppercase text-xl font-bold leading-5 text-gray-700 hover:text-white hover:bg-bluish">
                         Részletes program megtekintése
                     </p>
                 </div>
