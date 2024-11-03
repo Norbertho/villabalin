@@ -1,7 +1,12 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
 @import '@splidejs/splide/dist/css/splide.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
 .header{
     background-image: url("/images/mainbg.jpg");
     min-height: 60vh;
@@ -36,8 +41,6 @@
 	width : 100%;
 	height: auto;
 }
-
-
 .hr-with-text {
     display: flex;
     align-items: center;
@@ -62,4 +65,12 @@
     .hiddenFromMd {
         display: none;
     }
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.rounded-full {
+    border-radius: 50%;
 }
