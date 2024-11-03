@@ -38,45 +38,17 @@
             <p class="text-center text-sm md:text-lg">Csodálatos környezet és lelkiismeretes szakemberek</p>
             <div class="flex">
                 <div class="container mx-auto mb-24 mt-10">
-                    <div class="hiddenFromMd grid grid-cols-1 gap-4">
-                        <div class="px-8 text-black w-full h-full flex flex-col gap-4">
-                            <div class="flex items-center justify-center responsive-layout">
-                                <div style="margin-right: 40px">
-                                    <h2 class="text-md md:text-lg md:text-2xl font-bold text-gray-600 mb-4 mt-8">Forró-Török Tünde - Jógaoktató</h2>
-                                    <ul class="text-sm md:text-md ml-4 list-disc">
-                                        <li>Légző technikák</li>
-                                        <li>Feszültségoldó, energizáló jóga gyakorlás</li>
-                                        <li>Belső erő és biztonság kialakítása</li>
-                                    </ul>
+                    
+                    <div class="grid grid-cols-1 gap-4 px-4">
+                        <!-- Forró-Török Tünde Section -->
+                        <div class="text-black w-full h-full flex flex-col md:flex-row">
+                            <div class="w-full flex flex-col md:flex-row md:flex-row-reverse items-center justify-center">
+                                <div class="flex items-center justify-center">
+                                    <img src="{{ asset('images/joga_szokekor.jpg') }}" alt="Forró-Török Tünde" class="h-[140px] md:h-[220px] object-cover py-4 px-20" style="border-radius: 50%">
                                 </div>
-                                <img src="{{ asset('images/joga_szokekor.jpg') }}" alt="" class="px-20 h-[200px]" style="border-radius: 50%">
-                            </div>
-                        </div>
-
-                        <div class="mt-10 px-8 text-black w-full h-full flex flex-col gap-4">
-                            <div class="flex items-center justify-center">
-                                <img  src="{{ asset('images/joga_adrikor1.jpg') }}" alt="" class="px-20 h-[200px]" style="border-radius: 50%">
-                                <div style="margin-left: 40px">
-                                    <h2 class="text-md md:text-lg md:text-2xl font-bold text-gray-600 mb-4 mt-8">Váradi Adrienn - Coach</h2>
-                                    <ul class="text-sm md:text-md ml-4 list-disc">
-                                        <li>Business és life coaching</li>
-                                        <li>Stresszkezelés, idő menedzsment</li>
-                                        <li>Belső egyensúly megteremtése</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="hiddenmd grid grid-cols-1 gap-4 px-4">
-                        <div class="text-black w-full h-full flex flex-col gap-4">
-                            <div class="flex flex-col">
-                                <div class="w-full flex items-center justify-center">
-                                    <img  src="{{ asset('images/joga_szokekor.jpg') }}" alt="" class="px-20 h-[140px] object-cover" style="border-radius: 50%">
-                                </div>
-                                <div>
-                                    <h2 class="text-md md:text-lg md:text-2xl font-bold text-gray-600 mb-4 mt-8">Forró-Török Tünde - Jógaoktató</h2>
-                                    <ul class="text-sm md:text-md ml-4 list-disc">
+                                <div class="md:mt-4 md:mt-0 md:ml-10 text-center md:text-left">
+                                    <h2 class="text-md md:text-lg lg:text-2xl font-bold text-gray-600 mb-4 mt-2 md:mt-8">Forró-Török Tünde - Jógaoktató</h2>
+                                    <ul class="text-sm text-left md:text-lg ml-4 list-disc">
                                         <li>Légző technikák</li>
                                         <li>Feszültségoldó, energizáló jóga gyakorlás</li>
                                         <li>Belső erő és biztonság kialakítása</li>
@@ -84,16 +56,16 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="mt-10 text-black w-full h-full flex flex-col gap-4">
-                            <div class="flex flex-col">
-                                <div class="w-full flex items-center justify-center">
-                                    <img  src="{{ asset('images/joga_adrikor1.jpg') }}" alt="" class="px-20 h-[140px] object-cover" style="border-radius: 50%">
+                    
+                        <!-- Váradi Adrienn Section -->
+                        <div class="mt-10 text-black w-full h-full flex flex-col md:flex-row">
+                            <div class="flex w-full flex-col md:flex-row items-center justify-center">
+                                <div class="flex items-center justify-center">
+                                    <img src="{{ asset('images/joga_adrikor1.jpg') }}" alt="Váradi Adrienn" class="h-[140px] md:h-[220px] object-cover py-4 px-20" style="border-radius: 50%">
                                 </div>
-                                
-                                <div>
-                                    <h2 class="text-md md:text-lg md:text-2xl font-bold text-gray-600 mb-4 mt-8">Váradi Adrienn - Coach</h2>
-                                    <ul class="text-sm md:text-md ml-4 list-disc">
+                                <div class="md:mt-4 md:mt-0 md:ml-10 text-center md:text-left">
+                                    <h2 class="text-md md:text-lg lg:text-2xl font-bold text-gray-600 mb-4 mt-2 md:mt-8">Váradi Adrienn - Coach</h2>
+                                    <ul class="text-sm md:text-lg ml-4 list-disc text-left">
                                         <li>Business és life coaching</li>
                                         <li>Stresszkezelés, idő menedzsment</li>
                                         <li>Belső egyensúly megteremtése</li>

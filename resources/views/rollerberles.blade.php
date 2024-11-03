@@ -1,17 +1,17 @@
 <x-guest-layout>
     
     <div id="modal" class="fixed top-0 left-0 w-full h-full flex items-center justify-center invisible opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out" style="z-index:1000;">
-    <div class="bg-teal-50 rounded text-lg p-6 rounded shadow-lg my-24 relative"  style="max-width: 70vw;">
-        <button id="closeModal" class="absolute text-gray-700 font-bold text-2xl" style="position: absolute; top: 10px; right: 20px;">
-            &times;
-        </button>
-        <h2 class="text-2xl mb-4 mt-12 font-bold">Nyitási akció!</h2>
-        <p>Annak érdekében, h minél többen megtapasztalhassátok mekkora élmény a rollerezés a Körös vidékén, most 30%os akcióval vehetitek bérbe nálunk őket!
-Kellemes pihenést kívánunk minden ide látogatónak!
-Rollerre fel!</p>
+        <div class="bg-teal-50 rounded text-lg p-6 rounded shadow-lg my-24 relative"  style="max-width: 70vw;">
+            <button id="closeModal" class="absolute text-gray-700 font-bold text-2xl" style="position: absolute; top: 10px; right: 20px;">
+                &times;
+            </button>
+            <h2 class="text-2xl mb-4 mt-12 font-bold">Nyitási akció!</h2>
+            <p>Annak érdekében, h minél többen megtapasztalhassátok mekkora élmény a rollerezés a Körös vidékén, most 30%os akcióval vehetitek bérbe nálunk őket!
+                Kellemes pihenést kívánunk minden ide látogatónak!
+                Rollerre fel!</p>
+        </div>
+        
     </div>
-    
-</div>
     <section style="background-image: url({{ URL::asset('/images/roller/roller5.jpeg')}});  background-position: center center; background-repeat: no-repeat; background-size: cover; min-height: 80vh;" class="w-full bg-cover relative flex flex-col items-center justify-center px-8  md:px-16">
         <div class="absolute bg-black bg-opacity-40 inset-0 z-10"></div>
         <h1
