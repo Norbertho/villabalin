@@ -257,7 +257,7 @@
                 @endif
         </div>
 
-
+ 
     </div>
 </nav> 
 @endguest

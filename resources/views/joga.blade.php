@@ -100,7 +100,7 @@
                         <span class="w-full text-2xl text-gray-600 font-bold" >A tábor ára:</span>
                         <div class="w-ful flex flex-col">
                             <p class="font-bold text-gray-600">130.000 Ft/fő október 31-ig történő foglalás esetén</p>
-                            <p class="mb-2 text-gray-600">139.000 Ft/fő (november 1-től)</p>
+                            <p class="mb-2 text-gray-600">139.000 Ft/fő (november 1-től)</p> 
                             <div>
                                 <p class="flex items-center">Az ár tartalmazza az alábbiakat:</p>
                                 <ul class="ml-4 list-disc">

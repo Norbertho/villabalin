@@ -16,7 +16,7 @@ switch ($align) {
     default:
         $alignmentClasses = 'origin-top-right right-0';
         break;
-}
+}  
 
 switch ($width) {
     case '48':
