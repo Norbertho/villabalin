@@ -148,7 +148,7 @@
                     </div>
                     <div class="bg-teal-50 rounded text-lg p-6 flex flex-col gap-2 text-center">
                         <p>
-                            Jelentkezés és bávebb információ:
+                            Jelentkezés és bővebb információ:
                         </p>
                         <p>varadi.adrienn@eubility.eu</p>
                         <p>+36 20 239 89 29</p>
