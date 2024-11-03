@@ -160,13 +160,15 @@
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <div class="hidden sm:-my-px sm:ml-10 sm:flex sm:gap-2 md:gap-4 lg-gap-8">
                     @if (request()->routeIs('rollerberles'))
                           <x-jet-nav-link href="/" :active="request()->routeIs('/')">
                             <a class="flex items-center space-x-2" href="/">
                                       <x-jet-application-mark class="block w-auto" />
                                 </a>
                         </x-jet-nav-link>
+                    @elseif (request()->routeIs('joga'))
+                        
                     @else
                         <x-jet-nav-link href="/" :active="request()->routeIs('/')">
                             {{ __('FŐOLDAL') }}
@@ -183,9 +185,25 @@
                         <x-jet-nav-link href="{{ route('bekeszentandras-apartman-arak') }}" :active="request()->routeIs('bekeszentandras-apartman-arak')">
                             {{ __('ÁRAINK') }}
                         </x-jet-nav-link>
-                        <x-jet-nav-link href="{{ route('rollerberles') }}" :active="request()->routeIs('rollerberles')">
-                            {{ __('ROLLER KÖLCSÖNZÉS') }}
-                        </x-jet-nav-link>
+                        <x-jet-dropdown align="right" width="48">
+                            <x-slot name="trigger">
+                                <button class="h-full inline-flex items-center px-1 pt-1 border-b-4 border-transparent text-sm font-bold leading-5 text-gray-600 hover:text-gray-900 hover:border-teal-200 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition">
+                                    SZOLGÁLTATÁSOK
+                                </button>
+                                <x-slot name="content">
+                                    <x-jet-dropdown-link href="{{ route('profile.show') }}">
+                                        <x-jet-nav-link href="{{ route('rollerberles') }}" :active="request()->routeIs('rollerberles')">
+                                            {{ __('ROLLER KÖLCSÖNZÉS') }}
+                                        </x-jet-nav-link>
+                                    </x-jet-dropdown-link>
+                                    <x-jet-dropdown-link href="{{ route('profile.show') }}">
+                                        <x-jet-nav-link href="{{ route('joga') }}" :active="request()->routeIs('joga')">
+                                            {{ __('JÓGA TÁBOR') }}
+                                        </x-jet-nav-link>
+                                    </x-jet-dropdown-link>
+                                </x-slot>
+                            </x-slot>
+                        </x-jet-dropdown>
                         <div class="inline-flex items-center">
                             <a href="https://ibe.sabeeapp.com/properties/Villa-Balin-foglal%C3%A1s/?p=bSpbc4845ccceb04d66&checkin=2021-12-05&checkout=2021-12-06" class="bg-teal-300 px-4 py-2 rounded-full uppercase text-sm font-bold leading-5 text-gray-700 hover:text-white hover:bg-bluish">Foglalás</a>
                         </div>

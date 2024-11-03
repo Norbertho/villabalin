@@ -36,3 +36,30 @@
 	width : 100%;
 	height: auto;
 }
+
+
+.hr-with-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hr-with-text::before,
+.hr-with-text::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #aaa; /* Line color */
+    margin: 0 10px; /* Space between the text and the line */
+}
+
+@media (min-width: 768px) {
+    .hiddenmd {
+        display: none;
+    }
+}
+
+@media (max-width: 639px) { 
+    .hiddenFromMd {
+        display: none;
+    }
+}
