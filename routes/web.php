@@ -39,7 +39,9 @@ Route::get('/rollerkolcsonzes', function () {
 Route::get('/joga-es-onismereti-tabor', function () {
     return view('joga');
 })->name('joga');
-
+Route::get('/ujevi-testcelok-nyomaban', function () {
+    return view('ujevi-testcelok-nyomaban');
+})->name('ujevi-testcelok-nyomaban');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

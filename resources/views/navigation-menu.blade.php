@@ -195,7 +195,17 @@
                                 <x-slot name="content" >
                                   <div class="p-3">                            
                                         <x-jet-nav-link href="{{ route('joga') }}" :active="request()->routeIs('joga')">
-                                            {{ __('JÓGA TÁBOR') }}
+                                            {{ __('Jóga- és önismereti tábor') }}
+                                        </x-jet-nav-link>
+                                    </div>
+                                    <div class="p-3">                            
+                                        <x-jet-nav-link href="" >
+                                            {{ __('Őszi feltöltődés') }}
+                                        </x-jet-nav-link>
+                                    </div>
+                                    <div class="p-3">                            
+                                        <x-jet-nav-link href="{{ route('ujevi-testcelok-nyomaban') }}" :active="request()->routeIs('ujevi-testcelok-nyomaban')">
+                                            {{ __('Újévi testcélok nyomában') }}
                                         </x-jet-nav-link>
                                     </div>
                                 </x-slot>
@@ -248,7 +258,13 @@
                 ROLLER KÖLCSÖNZÉS
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="{{ route('joga') }}" :active="request()->routeIs('joga')">
-                JÓGA TÁBOR
+                Jóga- és önismereti tábor
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="">
+                Őszi feltöltődés
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="" :active="request()->routeIs('ujevi-testcelok-nyomaban')">
+                Újévi testcélok nyomában
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="https://ibe.sabeeapp.com/properties/Villa-Balin-foglal%C3%A1s/?p=bSpbc4845ccceb04d66&checkin=2021-12-05&checkout=2021-12-06" >
                 FOGLALÁS
