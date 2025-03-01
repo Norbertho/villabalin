@@ -187,30 +187,74 @@
                             {{ __('ROLLER KÖLCSÖNZÉS') }}
                         </x-jet-nav-link>
                 
-                        <x-jet-dropdown align="right" width="48">
-                            <x-slot name="trigger">
-                                <button class="h-full flex items-center px-1 pt-1 border-b-4 border-transparent text-sm font-bold leading-5 text-gray-600 hover:text-gray-900 hover:border-teal-200 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition">
+
+                        
+                            <!-- Dropdown Menu -->
+                            <div x-data="{ open: false }" class="relative group z-50">
+                                <!-- Main Menu Trigger -->
+                                <button
+                                    @mouseenter="open = true"
+                                    @mouseleave="open = false"
+                                    class="flex items-center px-4 py-2 text-gray-700 hover:text-gray-900 font-bold"
+                                >
                                     PROGRAMOK
                                 </button>
-                                <x-slot name="content" >
-                                  <div class="p-3">                            
-                                        <x-jet-nav-link href="{{ route('joga') }}" :active="request()->routeIs('joga')">
-                                            {{ __('Jóga- és önismereti tábor') }}
-                                        </x-jet-nav-link>
+                            
+                                <!-- Dropdown Menu -->
+                                <div
+                                    x-show="open"
+                                    @mouseenter="open = true"
+                                    @mouseleave="open = false"
+                                    class="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg z-50"
+                                    x-cloak
+                                >
+                                    <!-- Add padding to ensure seamless movement -->
+                                    <div class="py-2">
+                                        <!-- Jóga és Önismereti Tábor -->
+                                        <div x-data="{ submenuOpen: false }" class="relative group">
+                                            <button
+                                                @mouseenter="submenuOpen = true"
+                                                @mouseleave="submenuOpen = false"
+                                                class="block px-4 py-2 text-gray-700 hover:text-gray-900 w-full text-left"
+                                            >
+                                                Jóga és Önismereti Tábor
+                                            </button>
+                                            <!-- Submenu -->
+                                            <div
+                                                x-show="submenuOpen"
+                                                @mouseenter="submenuOpen = true"
+                                                @mouseleave="submenuOpen = false"
+                                                class="absolute left-full top-0 w-48 bg-white border rounded shadow-lg z-50"
+                                                x-cloak
+                                            >
+                                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-gray-900">Őszi Feltöltődés</a>
+                                            </div>
+                                        </div>
+                            
+                                        <!-- Önismereti Tábor -->
+                                        <div x-data="{ submenuOpen: false }" class="relative group mt-2">
+                                            <button
+                                                @mouseenter="submenuOpen = true"
+                                                @mouseleave="submenuOpen = false"
+                                                class="block px-4 py-2 text-gray-700 hover:text-gray-900 w-full text-left"
+                                            >
+                                                Önismereti Tábor
+                                            </button>
+                                            <!-- Submenu -->
+                                            <div
+                                                x-show="submenuOpen"
+                                                @mouseenter="submenuOpen = true"
+                                                @mouseleave="submenuOpen = false"
+                                                class="absolute left-full top-0 w-48 bg-white border rounded shadow-lg z-50"
+                                                x-cloak
+                                            >
+                                                <a href="#" class="block px-4 py-2 text-gray-700 hover:text-gray-900">Újévi Testcélok Nyomában</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="p-3">                            
-                                        <x-jet-nav-link href="" >
-                                            {{ __('Őszi feltöltődés') }}
-                                        </x-jet-nav-link>
-                                    </div>
-                                    <div class="p-3">                            
-                                        <x-jet-nav-link href="{{ route('ujevi-testcelok-nyomaban') }}" :active="request()->routeIs('ujevi-testcelok-nyomaban')">
-                                            {{ __('Újévi testcélok nyomában') }}
-                                        </x-jet-nav-link>
-                                    </div>
-                                </x-slot>
-                            </x-slot>
-                        </x-jet-dropdown>
+                                </div>
+                            </div>
+                        </div>
                         <div class="inline-flex items-center">
                             <a href="https://ibe.sabeeapp.com/properties/Villa-Balin-foglal%C3%A1s/?p=bSpbc4845ccceb04d66&checkin=2021-12-05&checkout=2021-12-06" class="bg-teal-300 px-4 py-2 rounded-full uppercase text-sm font-bold leading-5 text-gray-700 hover:text-white hover:bg-bluish">Foglalás</a>
                         </div>
